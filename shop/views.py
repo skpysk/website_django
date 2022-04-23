@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 from django.http import HttpResponse
 from paytm import Checksum
-MERCHANT_KEY = 'C%KsNOjphEKP7s_x'
+MERCHANT_KEY = 'yor key'
 
 
 
@@ -126,7 +126,7 @@ def checkout(request):
         
         params ={
 
-            'MID': 'nmCuHC98839638287047',
+            'MID': 'yor mid',
             'ORDER_ID': order.order_id,
             'TXN_AMOUNT': 1,
             'CUST_ID': 'email',
